@@ -1,0 +1,21 @@
+.apply-now, .job-location {
+    text-align: right;
+}
+.job-location {
+    font-size: 15px;
+}
+.margin-bottom-5{
+    margin-bottom: 0.5rem;
+}
+.apply-now-button {
+    background-color: #216cbb;
+    border-color: #216cbb;
+}
+
+.company-name {
+    color: #216cbb;
+}
+
+.job-details {
+    font-size: 12px;
+}
