@@ -16,6 +16,18 @@
     color: #216cbb;
 }
 
+.card-text {
+    font-size: 13px;
+}
+
 .job-details {
     font-size: 12px;
+}
+
+.job-card-details {
+    height: 100%;
+}
+
+.job-title {
+    font-size: 16px;
 }

@@ -6,9 +6,10 @@ import Button from 'react-bootstrap/Button';
 import './JobCard.css';
 function JobCard(props) {
     return(
-        <Card className="mt-3">
+        // Job card section starts
+        <Card className="job-card-details"> 
             <Card.Body>
-                <Card.Title>{props.job.name}</Card.Title>
+                <Card.Title className="job-title">{props.job.name}</Card.Title>
                 <Row>
                     <Col md={6}>
                         <Card.Text className="company-name margin-bottom-5">{props.job.hiring_company.name}</Card.Text>
@@ -24,11 +25,12 @@ function JobCard(props) {
                         </Card.Text>
                     </Col>
                     <Col md={6} className="apply-now">
-                        <Button className="apply-now-button">Apply Now</Button>
+                        <Button size="sm" className="apply-now-button">Apply Now</Button>
                     </Col>
                 </Row>
             </Card.Body>
         </Card>
+        // Job card section ends
     )
 }
 

@@ -8,9 +8,6 @@ function Header(props) {
     <Navbar expand="lg" variant="white" bg="white" fixed="top">
         <Container>
             <Navbar.Brand href="#"> <img src={JobGet} alt="Logo" className="logoImg"/> </Navbar.Brand>
-            <Nav className="justify-content-center flex-grow-1 pe-3">
-                <Nav.Link>Find Job</Nav.Link>
-            </Nav>
         </Container>
     </Navbar>
     )
