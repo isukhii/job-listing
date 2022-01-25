@@ -57,7 +57,7 @@ You don't have to ever use `eject`. The curated feature set is suitable for smal
 
 # Usage
 
-1. To search for a job, enter Job Title and Location(city name and state in the fields). Example: `Santa Monica, CA` or `London, UK` and press on `Find Job` button
+1. To search for a job, enter Job Title, example `Perl` or `Python` and Location(city name and state in the fields), example: `Santa Monica, CA` or `London, UK`, and press on `Find Job` button
 
 2. List of jobs will be displayed. To view more jobs click use pagination at the end of the page.
 
