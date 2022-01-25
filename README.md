@@ -3,8 +3,8 @@
 This project is a web application created using React that displays Jobs from ZipRecruiter API depending on what user enters in Job Title and Location.
 
 ## Built With
-..* React
-..* React Bootstrap
+* React
+* React Bootstrap
 
 # Getting Started
 
@@ -12,7 +12,7 @@ How to run your project locally.
 You will need node and npm installed on your system.
 
 ## Prerequisites
-..* npm 
+* npm 
 `npm install npm@latest -g`
 
 ## Installation
