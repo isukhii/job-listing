@@ -112,7 +112,7 @@ function Marketplace() {
         // Job card
           <Row className="job-list mt-3 mb-3">
             {jobs.length === 0 ? 
-              (<h5>No Jobs Found for the job title and location</h5>) : 
+              (<h5 className="text-center">No Jobs Found for the job title and location</h5>) : 
               ( jobs.map((job) => 
                   <Col md={6} lg={4} className="job-card">
                     <JobCard job = {job}/>

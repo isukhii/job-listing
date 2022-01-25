@@ -6,20 +6,36 @@ import Col from 'react-bootstrap/Col';
 import './JobSearchForm.css';
 
 function JobSearchForm(props) {
-    const [jobTitle, setEnteredJob] = useState('');
-    const [location, setEnteredLocation] = useState('');
+    const [jobTitle, setEnteredJob] = useState();
+    const [location, setEnteredLocation] = useState();
+    const [errorJob, setErrorJob] = useState(false);
+    const [errorLocation, setErrorLocation] = useState(false);
 
-    const jobHandler = (event) => setEnteredJob(event.target.value); // Change state of jobTitle
-    const handlelocationChange = (event) => setEnteredLocation(event.target.value); // Change state of location
+    // Change state of jobTitle
+    const jobHandler = (event) => {
+        setEnteredJob(event.target.value);
+        if(!!jobTitle) setErrorJob(false);
+    }
+
+    // Change state of location
+    const handlelocationChange = (event) => {
+        setEnteredLocation(event.target.value);
+        if(!!location) setErrorLocation(false);
+     } 
 
     // Submit Form with jobdata
     const submitHandler = (event) => {
-        event.preventDefault();
-        const jobData = {
-            jobTitle: jobTitle,
-            location: location
+        if(!!location && !!jobTitle) {
+            event.preventDefault();
+            const jobData = {
+                jobTitle: jobTitle,
+                location: location
+            }
+            props.onSearchJob(jobData);
+        } else {
+            if(!jobTitle) setErrorJob(true);
+            if(!location) setErrorLocation(true);
         }
-        props.onSearchJob(jobData);
     }
 
     return (
@@ -28,12 +44,12 @@ function JobSearchForm(props) {
                 <Row className="g-2">
                     <Col md={{ span: 3, offset: 3 }}> 
                         <Form.Group>
-                            <Form.Control size="md" placeholder="Job Title" onChange={jobHandler} />
+                            <Form.Control className={!errorJob ? "" : "is-invalid"} size="md" placeholder="Job Title" onChange={jobHandler} required/>
                         </Form.Group>
                     </Col>
                     <Col md={3}> 
                         <Form.Group>
-                            <Form.Control size="md" placeholder="Location" onChange={handlelocationChange} />
+                            <Form.Control size="md" className={!errorLocation ? "" : "is-invalid"} placeholder="Location" onChange={handlelocationChange} required/>
                         </Form.Group>
                     </Col>
                     <Col md={2}> 
