@@ -115,7 +115,7 @@ function Marketplace() {
               (<h5 className="text-center">No Jobs Found for the job title and location</h5>) : 
               ( jobs.map((job) => 
                   <Col md={6} lg={4} className="job-card">
-                    <JobCard job = {job}/>
+                    <JobCard key={job.id} job = {job}/>
                   </Col>
               ))}
           </Row>
