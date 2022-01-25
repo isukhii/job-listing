@@ -1,0 +1,39 @@
+.master-page {
+    background-color: #fafafb;
+    min-height: 96vh;
+    margin-top: 48px;
+}
+.master-page-container  {
+    margin: 30px;
+}
+.sort-by {
+    font-size: 15px;
+    background-color: #007d8b;
+    padding: 10px;
+    border-radius: 25px;
+    margin: 10px;
+    color: white;
+}
+.job-list {
+    max-height:60vh;
+    overflow: scroll;
+}
+.job-card {
+    margin-top: 10px;
+}
+.dreamJob {
+    font-weight: bold;
+}
+.float-right{
+    text-align: right;
+}
+.text-center {
+    text-align: center;
+}
+.spinner {
+    height: 100px;
+    width: 100px;
+}
+.col-sm-12{
+    margin-top:10px
+}
