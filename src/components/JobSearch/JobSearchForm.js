@@ -49,7 +49,7 @@ function JobSearchForm(props) {
                     </Col>
                     <Col md={3}> 
                         <Form.Group>
-                            <Form.Control size="md" className={!errorLocation ? "" : "is-invalid"} placeholder="Location" onChange={handlelocationChange} required/>
+                            <Form.Control size="md" className={!errorLocation ? "" : "is-invalid"} placeholder="Location (City, State)" onChange={handlelocationChange} required/>
                         </Form.Group>
                     </Col>
                     <Col md={2}> 

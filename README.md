@@ -1,18 +1,33 @@
-# Getting Started with Create React App
+# About The Project
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project is a web application created using React that displays Jobs from ZipRecruiter API depending on what user enters in Job Title and Location.
 
-## Available Scripts
+## Built With
+..* React
+..* React Bootstrap
 
+# Getting Started
+
+How to run your project locally.
+You will need node and npm installed on your system.
+
+## Prerequisites
+..* npm 
+`npm install npm@latest -g`
+
+## Installation
+
+1. Clone the repository
+    `git clone https://github.com/isukhii/job-listing.git`
+
+2. Install NPM packages
+    `npm install`
+
+## Build 
+Run `npm start` to build the project. Navigate to http://localhost:3000/. The app will automatically reload if you change any of the source files.
+
+### Other Available Scripts
 In the project directory, you can run:
-
-### `npm start`
-
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
-
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
 
 ### `npm test`
 
@@ -39,32 +54,12 @@ Instead, it will copy all the configuration files and the transitive dependencie
 
 You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
 
-## Learn More
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+# Usage
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+1. To search for a job, enter Job Title and Location(city name and state in the fields). Example: `Santa Monica, CA` or `London, UK` and press on `Find Job` button
 
-### Code Splitting
+2. List of jobs will be displayed. To view more jobs click use pagination at the end of the page.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+# Contact
+Sukhveen Anand (sukhveen21@gmail.com)
