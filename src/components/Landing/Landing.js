@@ -4,12 +4,12 @@ import JobCard from '../JobCard/JobCard';
 import JobSearchForm from '../JobSearch/JobSearchForm';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
-import './Marketplace.css';
+import './Landing.css';
 import Paging from '../Paging/Paging';
 import Filters from '../Filters/Filters';
 import Spinner from 'react-bootstrap/Spinner';
 
-function Marketplace() {
+function Landing() {
   const [jobs, setJobs] = useState('');
   const [jobData, setJobData] = useState('');
   const [activePage, setActivePage] = useState(1);
@@ -83,7 +83,7 @@ function Marketplace() {
   }, [activePage]);
 
   return (
-  <section className="master-page p-3">
+  <section className="master-page p-5">
     <div className="master-page-container">
       {!jobData &&
         <h2 className="text-center dreamJob">Find your dream job</h2>
@@ -142,4 +142,4 @@ function Marketplace() {
   )
 }
 
-export default Marketplace;
+export default Landing;

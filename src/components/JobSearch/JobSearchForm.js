@@ -6,8 +6,8 @@ import Col from 'react-bootstrap/Col';
 import './JobSearchForm.css';
 
 function JobSearchForm(props) {
-    const [jobTitle, setEnteredJob] = useState();
-    const [location, setEnteredLocation] = useState();
+    const [jobTitle, setEnteredJob] = useState('');
+    const [location, setEnteredLocation] = useState('');
     const [errorJob, setErrorJob] = useState(false);
     const [errorLocation, setErrorLocation] = useState(false);
 
@@ -44,12 +44,12 @@ function JobSearchForm(props) {
                 <Row className="g-2">
                     <Col md={{ span: 3, offset: 3 }}> 
                         <Form.Group>
-                            <Form.Control className={!errorJob ? "" : "is-invalid"} size="md" placeholder="Job Title" onChange={jobHandler} required/>
+                            <Form.Control value={jobTitle} className={!errorJob ? "" : "is-invalid"} size="md" placeholder="Job Title" onChange={jobHandler} required/>
                         </Form.Group>
                     </Col>
                     <Col md={3}> 
                         <Form.Group>
-                            <Form.Control size="md" className={!errorLocation ? "" : "is-invalid"} placeholder="Location (City, State)" onChange={handlelocationChange} required/>
+                            <Form.Control value={location} size="md" className={!errorLocation ? "" : "is-invalid"} placeholder="Location (City, State)" onChange={handlelocationChange} required/>
                         </Form.Group>
                     </Col>
                     <Col md={2}> 

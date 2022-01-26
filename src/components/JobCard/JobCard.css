@@ -26,6 +26,7 @@
 
 .job-card-details {
     height: 100%;
+    box-shadow: 0 0px 6px 0 rgb(0 0 0 / 19%);
 }
 
 .job-title {

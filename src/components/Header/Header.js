@@ -1,5 +1,4 @@
 import Navbar from 'react-bootstrap/Navbar';
-import Nav from 'react-bootstrap/Nav';
 import Container from 'react-bootstrap/Container';
 import JobGet from '../../assets/images/JobGet.png'; 
 import './Header.css'
