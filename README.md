@@ -61,5 +61,7 @@ You don't have to ever use `eject`. The curated feature set is suitable for smal
 
 2. List of jobs will be displayed. To view more jobs click use pagination at the end of the page.
 
+3. By clicking on the filter, jobs can be filter by radius and how many days before was it posted 
+
 # Contact
 Sukhveen Anand (sukhveen21@gmail.com)
