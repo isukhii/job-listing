@@ -4,6 +4,7 @@ import Button from 'react-bootstrap/Button';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import './JobSearchForm.css';
+import Autocomplete from "react-google-autocomplete";
 
 function JobSearchForm(props) {
     const [jobTitle, setEnteredJob] = useState('');
@@ -19,7 +20,9 @@ function JobSearchForm(props) {
 
     // Change state of location
     const handlelocationChange = (event) => {
-        setEnteredLocation(event.target.value);
+        console.log(event)
+        let location= `${event.address_components[0].long_name} ${event.address_components[2].short_name}`
+        setEnteredLocation(event.formatted_address);
         if(!!location) setErrorLocation(false);
      } 
 
@@ -44,13 +47,17 @@ function JobSearchForm(props) {
                 <Row className="g-2">
                     <Col md={{ span: 3, offset: 3 }}> 
                         <Form.Group>
+
                             <Form.Control value={jobTitle} className={!errorJob ? "" : "is-invalid"} size="md" placeholder="Job Title" onChange={jobHandler} required/>
                         </Form.Group>
                     </Col>
                     <Col md={3}> 
-                        <Form.Group>
+                    <Form.Group>
+                        <Autocomplete apiKey="AIzaSyDVB1glhuggM6sp25Yl0AYOmbtlbhxqwAA" onPlaceSelected={handlelocationChange} size="md" className={!errorLocation ? "form-control form-control-md" : "is-invalid form-control form-control-md"} required/>
+                    </Form.Group>
+                        {/* <Form.Group>
                             <Form.Control value={location} size="md" className={!errorLocation ? "" : "is-invalid"} placeholder="Location (City, State)" onChange={handlelocationChange} required/>
-                        </Form.Group>
+                        </Form.Group> */}
                     </Col>
                     <Col md={2}> 
                         <Button onClick={submitHandler} className="search-button" size="md">Find Job</Button>
